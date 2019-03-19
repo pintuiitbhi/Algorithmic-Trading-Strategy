@@ -1,0 +1,4 @@
+Instrument,Symbol,Type,Expiry,Exchange,Currency,Flag,Cash
+AMZN,AMZN,STK,,SMART,USD,0,100000.0
+GOOG,GOOG,STK,,SMART,USD,0,21260.0
+FB,FB,STK,,SMART,USD,0,4689.3
