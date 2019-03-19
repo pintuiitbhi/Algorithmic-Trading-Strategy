@@ -1,10 +1,11 @@
 # Algorithmic-Trading-Strategy
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>GROUP-2<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+GROUP-2
 Members:
 Pintu Kumar
+
 Devansh Bajpai
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 We have used the official IB API from the IB for this project and for doing backtest
 we wrote our own code in python to backtest it.
@@ -13,7 +14,9 @@ we wrote our own code in python to backtest it.
 2. Interactive Broker Latest TWS is used for connection with IB API.
 
  #########################################################################
+ 
  ..................Connection Settings in TWS and Python program..........
+ 
  We have used Demo account of IB. Since only one user can login at a time in IB. So use this setting in TWS api
  settings.
 
@@ -22,11 +25,14 @@ we wrote our own code in python to backtest it.
  Master Client Id : 999
 
       Use the above settings in python and TWS for establishing connection.
+      
  ########################################################################
 
 
 #########################################################################
+
 ...................Automating the Trade..................................
+
 In order to automate the trade such that trading is performed daily in morning time,
 we scheduled the file "RUN_ME.py" in Ubuntu in "crontab file". The file "RUN_ME.py"
 run daily in morning after market opens (after 1 minute).
@@ -41,7 +47,9 @@ This command will do trading at 9:15am from Monday to Friday
 
 
 #########################################################################
+
 .....................Steps to execute the Project..........................
+
 After performing above settings in TWS api settings tab
 1. Run the file "create_database.py" .
     NOTE:- if you are running on windows then change the path symbol from "/" to "\".
@@ -55,6 +63,7 @@ After performing above settings in TWS api settings tab
 #########################################################################
 
 #########################################################################
+
  ....................Structure of Project Folder "trading02"..............
 
 (a.) The file "RUN_ME.py" is to control the configuration of trading. Like User can put enter the moving average period
@@ -91,10 +100,13 @@ After performing above settings in TWS api settings tab
   >>> roundtrips.csv : it keep record of each trade like trading date, instrument, signal (-1 for Selling and 1 for buying), and
       buying (column for storing buying or selling price, negative value for selling)
   >>> historicaldat.csv : it stores the fetched historical data from quandl website.
+  
 ###################################################################################################
 
 ###################################################################################################
+
 ......................................Backtest....................................................
+
 In order to do the backtest we download historical data from quandl for a year and simulated on it
 for one year and executed the order on IB.
 
@@ -102,11 +114,15 @@ for one year and executed the order on IB.
 So, we write our own code to backtest the strategy.
 
 "Backtrader" is used for program which is written using IBPy library which uses Java IB API indirectly .
+
 ####################################################################################################
 
 ####################################################################################################
+
 ................................Work Remaining to do in the Project.................................
+
 1.Getting live portfolio and order details .
 2.Order status monitoring.
 3.Requesiting live stock price.
+
 #####################################################################################################
