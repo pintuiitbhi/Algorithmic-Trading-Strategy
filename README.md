@@ -2,6 +2,7 @@
 
 GROUP-2
 Members:
+
 Pintu Kumar
 
 Devansh Bajpai
@@ -43,7 +44,7 @@ crontab command in terminal.
 "15 9 * * 1-5 python3 RUN_ME.py"
 This command will do trading at 9:15am from Monday to Friday
 
-#########################################################################
+######################################################################
 
 
 #########################################################################
